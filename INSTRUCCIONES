@@ -1,6 +1,6 @@
 Para correr el proyecto se necesita un servidor local de preferencia Laragon
 ubicar el proyecto en C:\laragon\www
-acceder a phpmyadmin e importar la base de datos contenida en el proyecto
+acceder a phpmyadmin e importar la base de datos contenida en el proyecto "prueba-tecnica.sql"
 luego acceder a la terminal de Laragon y ubicarse en el proyecto con el comando cd prueba-tecnica
 luego iniciar el servicio con el comando : npm run dev
 para acceder a la aplicacion se usa esta URL en el navegador http://prueba-tecnica.test
