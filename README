@@ -2,3 +2,4 @@ Como usar el projecto laravel Prueba-Tecnica
 Ejecutar laragon e iniciar los servicios apache y mysql
 abrir terminar de laragon
 ubicarse en el proyecto e iniciar con npm run dev
+en el navegador ir a : prueba-tecnica.test
