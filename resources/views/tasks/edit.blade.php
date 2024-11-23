@@ -11,7 +11,7 @@
         </div>
     </div>
 
-    <!-- Mostrar errores de validación -->
+    
     @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -22,10 +22,10 @@
     </div>
     @endif
 
-    <!-- Formulario para editar la tarea -->
+    
     <form action="{{ route('tasks.update', $task->id) }}" method="POST">
         @csrf
-        @method('PUT')  <!-- Especificamos que es una actualización -->
+        @method('PUT')  
 
         <div class="mb-3">
             <label for="title" class="form-label">Título</label>

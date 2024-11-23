@@ -4,11 +4,11 @@
 <div class="container py-4">
     <h1 class="h3 mb-4">Crear Nueva Tarea</h1>
 
-    <!-- Formulario para crear una nueva tarea -->
+  
     <form action="{{ route('tasks.store') }}" method="POST">
-        @csrf <!-- Protección contra CSRF -->
+        @csrf 
         
-        <!-- Campo para el título de la tarea -->
+        
         <div class="form-group mb-3">
             <label for="title" class="form-label">Título de la tarea</label>
             <input type="text" name="title" id="title" class="form-control @error('title') is-invalid @enderror" value="{{ old('title') }}" required>
@@ -17,7 +17,7 @@
             @enderror
         </div>
 
-        <!-- Campo para la descripción -->
+     
         <div class="form-group mb-3">
             <label for="description" class="form-label">Descripción</label>
             <textarea name="description" id="description" class="form-control @error('description') is-invalid @enderror">{{ old('description') }}</textarea>
@@ -26,7 +26,7 @@
             @enderror
         </div>
 
-        <!-- Campo para la fecha de vencimiento -->
+        
         <div class="form-group mb-3">
             <label for="due_date" class="form-label">Fecha de vencimiento</label>
             <input type="date" name="due_date" id="due_date" class="form-control @error('due_date') is-invalid @enderror" value="{{ old('due_date') }}">
@@ -35,7 +35,7 @@
             @enderror
         </div>
 
-        <!-- Campo para seleccionar el estado de la tarea -->
+      
         <div class="form-group mb-3">
             <label for="status" class="form-label">Estado</label>
             <select name="status" id="status" class="form-control @error('status') is-invalid @enderror" required>
@@ -48,7 +48,7 @@
             @enderror
         </div>
 
-        <!-- Campo para seleccionar la prioridad de la tarea -->
+       
         <div class="form-group mb-3">
             <label for="priority" class="form-label">Prioridad</label>
             <select name="priority" id="priority" class="form-control @error('priority') is-invalid @enderror" required>
@@ -61,7 +61,6 @@
             @enderror
         </div>
 
-        <!-- Botón para enviar el formulario -->
         <button type="submit" class="btn btn-primary mt-3">Crear Tarea</button>
     </form>
 </div>

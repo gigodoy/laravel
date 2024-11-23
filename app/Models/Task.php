@@ -25,15 +25,11 @@ class Task extends Model
     {
         return $this->belongsTo(User::class);
     }
-
-    // Método para obtener las tareas solo del usuario autenticado
     public static function getTasksForAuthenticatedUser()
     {
-        // Recupera todas las tareas del usuario autenticado, con 'soft delete' si es necesario
         return self::where('user_id', Auth::id())->get();
     }
 
-    // Accesor para formatear la fecha de vencimiento al obtenerla de la base de datos
     public function getDueDateAttribute($value)
     {
         // Devuelve la fecha en el formato 'Y-m-d' (ej. 2024-11-23)

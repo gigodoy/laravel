@@ -17,7 +17,6 @@
         </div>
     @else
         <div class="table-responsive">
-            <!-- Se agregan las clases table-bordered y table-sm para bordes y mayor separación -->
             <table class="table table-bordered table-striped table-hover table-sm">
                 <thead class="table-primary">
                     <tr>
